@@ -1,0 +1,9 @@
+{
+  "_keyValues": {
+    "BestTime.Num_0": 15.3246384,
+    "BestTime_0": "0:15",
+    "Cash": 7,
+    "Item_1": 1,
+    "CurrentItemUsed": 1
+  }
+}

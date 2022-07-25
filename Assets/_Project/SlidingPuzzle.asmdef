@@ -1,0 +1,21 @@
+{
+    "name": "SlidingPuzzle",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:8325c092914ee9e4a96f43434c393bf4",
+        "GUID:b71f8efa8a7df964d8ded756eb3df5e7",
+        "GUID:562f1f753c16f5842a9f1c1a7bdbf913",
+        "GUID:9459b88195abfab4096b9094a20700cc",
+        "GUID:87954e8c75fec474b9d44c4d803c7127"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
