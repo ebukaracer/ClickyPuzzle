@@ -1,0 +1,9 @@
+{
+  "KeyValues": {
+    "Username": "Racer",
+    "Difficulty": 0,
+    "BestTime.4X4.Num_0": 375.0573,
+    "BestTime.4X4.Str_0": "6m:15s",
+    "Cash": 3
+  }
+}

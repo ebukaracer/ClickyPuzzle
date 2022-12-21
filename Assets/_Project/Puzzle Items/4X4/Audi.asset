@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a39f75a37b98f44fa971cf1130547a0, type: 3}
+  m_Name: Audi
+  m_EditorClassIdentifier: 
+  <ItemID>k__BackingField: 4
+  <ItemPrice>k__BackingField: 15
+  <ImageName>k__BackingField: Audi Car
+  slicedSprites:
+  - name: Easy
+    sprites:
+    - {fileID: 0}
+    - {fileID: -2321090398709993120, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: 7244856238940646118, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: 1593841457896145501, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: -6560349507267263542, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: 6477227155142488388, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: 4751016229538701161, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: 621320437530900314, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: -6210658300855947662, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: 1039522281061245859, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: 3572424635089421502, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: 6218346632375296454, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: -4845897721733080104, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: -6326686962946888904, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: 40775221050285019, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    - {fileID: -4007815724392486916, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+    emptySlot: {fileID: 6380005093748886713, guid: 41f75e3520d15064a813b036572537e0, type: 3}
+  - name: Hard
+    sprites:
+    - {fileID: 0}
+    - {fileID: -4555959876091576754, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: -6693833770346176421, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: 1663074909935486518, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: -750480667790525170, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: -1295518563206317239, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: -4646675867860356836, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: 1693252417646452181, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: -4489886088795602308, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: -1460392669405629920, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: 4462424926288155984, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: 7255599306677980628, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: 5882207442105885480, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: -5847653068662586074, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: -2769591122590542884, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    - {fileID: -1331071269437355040, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+    emptySlot: {fileID: 3710016983968579743, guid: a26f2c0c54c8e6849b01dddb3dbdb470, type: 3}
+  previewImage: {fileID: 21300000, guid: fea700272b10dd349a5bab85ca403903, type: 3}

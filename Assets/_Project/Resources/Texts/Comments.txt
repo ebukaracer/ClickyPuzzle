@@ -1,0 +1,19 @@
+﻿#0-AboveHighscore:
+Fair
+Moderate
+Average
+Passable
+Okay
+Tolerable
+Not bad
+
+#1-BelowHighscore:
+Awesome!
+Whoo Hoo!
+Way to go!
+Nailed it!
+Good Game!
+Hats off!
+Mazel tov!
+Props!
+Cheers!

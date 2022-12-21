@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a39f75a37b98f44fa971cf1130547a0, type: 3}
+  m_Name: Lego
+  m_EditorClassIdentifier: 
+  <ItemID>k__BackingField: 2
+  <ItemPrice>k__BackingField: 8
+  <ImageName>k__BackingField: Lego Minifig
+  slicedSprites:
+  - name: Easy
+    sprites:
+    - {fileID: 0}
+    - {fileID: 2103692556670181659, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: -7692469573286026477, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: -2033027581798589415, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: 4111062846054793709, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: -329760167309486690, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: -3925983954253176620, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: -2708597695963698391, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: 720411909045146797, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: 3124726892901678757, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: 7786160407759348999, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: -6661892342311559278, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: 3948686138952923165, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: -3211932576198937917, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: 7405137307117666364, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    - {fileID: -92738349364985336, guid: e8f719887db16604ca22a43916eda819, type: 3}
+    emptySlot: {fileID: 824674606173463388, guid: e8f719887db16604ca22a43916eda819, type: 3}
+  - name: Hard
+    sprites:
+    - {fileID: 0}
+    - {fileID: 2183862175938659592, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: -977077934530658364, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: 5541703513417658747, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: 2584070466146975953, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: 7267574667991303843, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: 4261297403518112238, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: -877722014510631903, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: -6397279701856544196, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: 6006597861193109231, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: 3022809317932802802, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: 8373952813217042658, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: 6845188720106136534, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: -447531845536037052, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: -1649603246350754011, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    - {fileID: -8737927141315452206, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+    emptySlot: {fileID: 5677102782748042883, guid: 2d729df4792788c4f904f9c1b8bce329, type: 3}
+  previewImage: {fileID: 21300000, guid: 023574b42228ec045ab81fd6c11b94ba, type: 3}
