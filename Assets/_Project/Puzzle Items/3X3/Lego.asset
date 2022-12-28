@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a39f75a37b98f44fa971cf1130547a0, type: 3}
+  m_Name: Lego
+  m_EditorClassIdentifier: 
+  <ItemID>k__BackingField: 2
+  <ItemPrice>k__BackingField: 8
+  <ImageName>k__BackingField: Lego Minifig
+  slicedSprites:
+  - name: Easy
+    sprites:
+    - {fileID: 0}
+    - {fileID: 811530542978769564, guid: 2496c29b18d04b7498337ba197992386, type: 3}
+    - {fileID: -83282161196634684, guid: 2496c29b18d04b7498337ba197992386, type: 3}
+    - {fileID: 3439480074974023951, guid: 2496c29b18d04b7498337ba197992386, type: 3}
+    - {fileID: -9156448981688902799, guid: 2496c29b18d04b7498337ba197992386, type: 3}
+    - {fileID: -3507284784215222758, guid: 2496c29b18d04b7498337ba197992386, type: 3}
+    - {fileID: 3195674947725816210, guid: 2496c29b18d04b7498337ba197992386, type: 3}
+    - {fileID: -3792809186529165490, guid: 2496c29b18d04b7498337ba197992386, type: 3}
+    - {fileID: -4436218415342119778, guid: 2496c29b18d04b7498337ba197992386, type: 3}
+    emptySlot: {fileID: 1631191047873197587, guid: 2496c29b18d04b7498337ba197992386, type: 3}
+  - name: Hard
+    sprites:
+    - {fileID: 0}
+    - {fileID: -2562877818073170972, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
+    - {fileID: -932747131670633205, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
+    - {fileID: -6715810074438942576, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
+    - {fileID: 999098395952363485, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
+    - {fileID: -261538347142714731, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
+    - {fileID: -2645293035550962614, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
+    - {fileID: -8817134153258721350, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
+    - {fileID: -8675991090473565071, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
+    emptySlot: {fileID: -4605871456322088021, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
+  previewImage: {fileID: 21300000, guid: 5df6248745bc1fd4095f8b886d797c54, type: 3}

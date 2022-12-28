@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a39f75a37b98f44fa971cf1130547a0, type: 3}
+  m_Name: Audi
+  m_EditorClassIdentifier: 
+  <ItemID>k__BackingField: 4
+  <ItemPrice>k__BackingField: 15
+  <ImageName>k__BackingField: Audi Car
+  slicedSprites:
+  - name: Easy
+    sprites:
+    - {fileID: 0}
+    - {fileID: 304118271728914333, guid: 3c6e49216333e3840941ddbad7b22483, type: 3}
+    - {fileID: 8046193849980065823, guid: 3c6e49216333e3840941ddbad7b22483, type: 3}
+    - {fileID: 3308617740941673205, guid: 3c6e49216333e3840941ddbad7b22483, type: 3}
+    - {fileID: 218393170075405313, guid: 3c6e49216333e3840941ddbad7b22483, type: 3}
+    - {fileID: -5969961432736697650, guid: 3c6e49216333e3840941ddbad7b22483, type: 3}
+    - {fileID: 7584217641096915572, guid: 3c6e49216333e3840941ddbad7b22483, type: 3}
+    - {fileID: -6970510314513939528, guid: 3c6e49216333e3840941ddbad7b22483, type: 3}
+    - {fileID: 8838097600134754544, guid: 3c6e49216333e3840941ddbad7b22483, type: 3}
+    emptySlot: {fileID: 5973911281243714824, guid: 3c6e49216333e3840941ddbad7b22483, type: 3}
+  - name: Hard
+    sprites:
+    - {fileID: 0}
+    - {fileID: -6832133166196702274, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
+    - {fileID: -8125372678279924562, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
+    - {fileID: -6269249409320579980, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
+    - {fileID: 3042974277716110146, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
+    - {fileID: -2402536449363966181, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
+    - {fileID: 9055572123554995487, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
+    - {fileID: -2443273307695510366, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
+    - {fileID: 803358510517954626, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
+    emptySlot: {fileID: -676812162861665625, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
+  previewImage: {fileID: 21300000, guid: 1f6405d0ad4313f4d877d5d8273283dc, type: 3}
