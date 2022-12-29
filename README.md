@@ -23,10 +23,12 @@ The game is built while having just one dimension in mind. Currently the game is
 
 ## Download:
 Get either: [APK 3X3](https://github.com/ebukaracer/ClickyPuzzle/releases/download/apk.3X3-v1.0.0/ClickyPuzzle_3X3.apk)
+
 <img src="https://i.ibb.co/hXCTZWy/3X3.png" 
 alt="APK image_3X3" width="25%" height="25%"/>
 
-or [APK 4X4](https://github.com/ebukaracer/ClickyPuzzle/releases/download/apk.4X4-v1.0.0/ClickyPuzzle_4X4.apk)  
+or [APK 4X4](https://github.com/ebukaracer/ClickyPuzzle/releases/download/apk.4X4-v1.0.0/ClickyPuzzle_4X4.apk)
+
 <img src="https://i.ibb.co/6nMkLNL/4X4.png" 
 alt="APK img_3X3" width="25%" height="25%"/>
 
