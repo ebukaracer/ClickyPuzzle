@@ -12,17 +12,13 @@ internal class Initializer
     private static Sprite _previewImg;
     private static SlicedSprite _slicedSprite;
 
-    public static void Init(PuzzleItem puzzleItem, string path, bool isThis)
+    public static void InitToScriptableObj(PuzzleItem puzzleItem, string path)
     {
         try
         {
             _gridCount = puzzleItem.Dimension.EvenDimension.Item2;
 
-            if (isThis)
-                InitThis(puzzleItem, path);
-            else
-                InitThat(puzzleItem, path);
-
+            Init(puzzleItem, path);
         }
         catch (System.Exception ex)
         {
@@ -38,31 +34,15 @@ internal class Initializer
         Logging.Log("Success!");
     }
 
-    private static void InitThis(PuzzleItem puzzleItem, string path)
+    private static void Init(PuzzleItem puzzleItem, string path)
     {
         if (!FillSlicedSprite(path))
             return;
 
         _slicedSprite.emptySlot = _slicedSprite.sprites[0];
         _slicedSprite.sprites[0] = null;
-        _slicedSprite.name = "Easy";
 
-        puzzleItem.SlicedSprites[0] = _slicedSprite;
-
-        Logging.Log("Success!");
-        EditorUtility.SetDirty(puzzleItem);
-    }
-
-    private static void InitThat(PuzzleItem puzzleItem, string path)
-    {
-        if (!FillSlicedSprite(path))
-            return;
-
-        _slicedSprite.emptySlot = _slicedSprite.sprites[0];
-        _slicedSprite.sprites[0] = null;
-        _slicedSprite.name = "Hard";
-
-        puzzleItem.SlicedSprites[1] = _slicedSprite;
+        puzzleItem.SlicedSprites = _slicedSprite;
 
         Logging.Log("Success!");
         EditorUtility.SetDirty(puzzleItem);

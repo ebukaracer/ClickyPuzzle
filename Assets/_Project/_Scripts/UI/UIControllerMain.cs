@@ -14,24 +14,24 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
 
     private string _highscore;
     private bool _isUserPanelActive;
-    private int _cashAmount;
+    private int _booksReadCount;
 
     [Header("TEXTS")]
     [SerializeField] private TextMeshProUGUI highscoreT;
     [SerializeField] private TextMeshProUGUI modeT;
-    [SerializeField] private TextMeshProUGUI[] cashT;
+    [SerializeField] private TextMeshProUGUI booksReadT;
 
 
     /// <summary>
     /// Gets/updates player's wallet amount in case player purchases an item.
     /// </summary>
-    public int TotalCash
+    public int TotalBooksRead
     {
-        get => _cashAmount;
+        get => _booksReadCount;
         set
         {
-            _cashAmount = value;
-            SaveSystem.SaveData(Metrics.Cash, _cashAmount);
+            _booksReadCount = value;
+            booksReadT.text = $"{_booksReadCount}/5";
         }
     }
 
@@ -41,8 +41,8 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
 
         _anim = GetComponent<Animator>();
 
-        InitCash();
         InitMode();
+        UpdateHighscore();
     }
 
     /// <summary>
@@ -55,22 +55,15 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
                 (Metrics.CurrentItemInUse)).Dimension.EvenDimension.Item3;
     }
 
-    /// <summary>
-    /// Retrieves and refreshes player's cash from wallet.
-    /// </summary>
-    private void InitCash()
+
+    public void DisplayLibrary(bool state)
     {
-        _cashAmount = SaveSystem.GetData<int>(Metrics.Cash);
-        SyncCash();
+        _anim.SetBool(Metrics.LibraryIn, state);
     }
 
-    /// <summary>
-    /// Pops-out shopping cart panel when player clicks on the shop-icon.
-    /// This is assigned to shop-button and close-shop-button on the main-menu.
-    /// </summary>
-    public void DisplayShoppingCart(bool state)
+    public void DisplayInfo(bool state)
     {
-        _anim.SetBool(Metrics.SlideInShop, state);
+        _anim.SetBool(Metrics.InfoIn, state);
     }
 
     /// <summary>
@@ -98,29 +91,13 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
     /// Assigns player's saved highscore to highscore text.
     /// Assigns a default highscore if none.
     /// </summary>
-    public void SyncHighscore(int difficulty = 0)
+    private void UpdateHighscore()
     {
-        _highscore = SaveSystem.GetData<string>(Metrics.BestTimeStr(difficulty, modeT.text));
+        _highscore = SaveSystem.GetData<string>(Metrics.BestTimeStr(modeT.text));
 
-        if (string.IsNullOrEmpty(_highscore))
-        {
-            highscoreT.text = Metrics.DefaultHighscoreFormat;
-
-            return;
-        }
-
-        highscoreT.text = _highscore;
-    }
-
-    /// <summary>
-    /// Updates the cash amount text on the main/shop panel.
-    /// </summary>
-    public void SyncCash()
-    {
-        foreach (var t in cashT)
-        {
-            t.SetText("${0}", _cashAmount);
-        }
+        highscoreT.text = string.IsNullOrEmpty(_highscore)
+            ? Metrics.DefaultHighscoreFormat
+            : _highscore;
     }
 
     /// <summary>
@@ -164,14 +141,14 @@ internal partial class UIControllerMain
     #region Hidden UI Elements
     private int _index;
 
-    private bool _isShopOpen;
+    private bool _isLibraryOpen;
     private bool _isSettingOpen;
     private bool _isUserOpen;
     private bool _isInputFieldOpen;
 
     [Header("HIDDEN UIs REFs"), Space(10)]
     [SerializeField] private CanvasGroup settingPanel;
-    [SerializeField] private Canvas shopPanel;
+    [SerializeField] private CanvasGroup libraryPanel;
     [SerializeField] private Canvas userPanel;
 
     [Space(5)]
@@ -187,17 +164,17 @@ internal partial class UIControllerMain
         if (_isSettingOpen || _isUserOpen || _isInputFieldOpen)
             return;
 
-        _isShopOpen = !_isShopOpen;
+        _isLibraryOpen = !_isLibraryOpen;
 
-        mainPanel.SetActive(!_isShopOpen);
-        playB.SetActive(!_isShopOpen);
-        shopPanel.enabled = _isShopOpen;
+        mainPanel.SetActive(!_isLibraryOpen);
+        playB.SetActive(!_isLibraryOpen);
+        libraryPanel.enabled = _isLibraryOpen;
     }
 
     [ContextMenu(nameof(ShowSettingMenu))]
     private void ShowSettingMenu()
     {
-        if (_isShopOpen || _isUserOpen || _isInputFieldOpen)
+        if (_isLibraryOpen || _isUserOpen || _isInputFieldOpen)
             return;
 
         _index++;
@@ -213,7 +190,7 @@ internal partial class UIControllerMain
     [ContextMenu(nameof(ShowUserPane))]
     private void ShowUserPane()
     {
-        if (_isSettingOpen || _isShopOpen || _isInputFieldOpen)
+        if (_isSettingOpen || _isLibraryOpen || _isInputFieldOpen)
             return;
 
         _isUserOpen = !_isUserOpen;
@@ -223,7 +200,7 @@ internal partial class UIControllerMain
     [ContextMenu(nameof(ShowInputFieldStartup))]
     private void ShowInputFieldStartup()
     {
-        if (_isSettingOpen || _isUserOpen || _isShopOpen)
+        if (_isSettingOpen || _isUserOpen || _isLibraryOpen)
             return;
 
         _isInputFieldOpen = !_isInputFieldOpen;
@@ -236,7 +213,7 @@ internal partial class UIControllerMain
         // User defined-settings in the scene.
         settingPanel.alpha = _index = 0;
         _isSettingOpen = false;
-        shopPanel.enabled = _isShopOpen = false;
+        libraryPanel.enabled = _isLibraryOpen = false;
         userPanel.enabled = _isUserOpen = false;
         startupInputField.SetActive(_isInputFieldOpen = false);
 

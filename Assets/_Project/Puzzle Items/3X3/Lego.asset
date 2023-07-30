@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Lego
   m_EditorClassIdentifier: 
   <ItemID>k__BackingField: 2
-  <ItemPrice>k__BackingField: 8
   <ImageName>k__BackingField: Lego Minifig
+  <Description>k__BackingField: Lorem ipsum dolor sit amet, consectetur adipiscing
+    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   slicedSprites:
-  - name: Easy
     sprites:
     - {fileID: 0}
     - {fileID: 811530542978769564, guid: 2496c29b18d04b7498337ba197992386, type: 3}
@@ -28,16 +32,4 @@ MonoBehaviour:
     - {fileID: -3792809186529165490, guid: 2496c29b18d04b7498337ba197992386, type: 3}
     - {fileID: -4436218415342119778, guid: 2496c29b18d04b7498337ba197992386, type: 3}
     emptySlot: {fileID: 1631191047873197587, guid: 2496c29b18d04b7498337ba197992386, type: 3}
-  - name: Hard
-    sprites:
-    - {fileID: 0}
-    - {fileID: -2562877818073170972, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
-    - {fileID: -932747131670633205, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
-    - {fileID: -6715810074438942576, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
-    - {fileID: 999098395952363485, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
-    - {fileID: -261538347142714731, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
-    - {fileID: -2645293035550962614, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
-    - {fileID: -8817134153258721350, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
-    - {fileID: -8675991090473565071, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
-    emptySlot: {fileID: -4605871456322088021, guid: 4a643f9bbecb75b4ea2e9aa237388d6e, type: 3}
   previewImage: {fileID: 21300000, guid: 5df6248745bc1fd4095f8b886d797c54, type: 3}

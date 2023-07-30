@@ -1,6 +1,12 @@
 {
   "KeyValues": {
     "Username": "Racer",
-    "Difficulty": 0
+    "Sound": 0,
+    "CurrentItemInUse": 2,
+    "IsMatched.0": 0,
+    "BestTime.3X3.Num": 3.95616,
+    "BestTime.3X3.Str": "0m:3s",
+    "IsMatched.1": 1,
+    "IsMatched.2": 2
   }
 }

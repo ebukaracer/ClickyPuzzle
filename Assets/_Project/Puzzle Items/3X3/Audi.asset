@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: Audi
   m_EditorClassIdentifier: 
   <ItemID>k__BackingField: 4
-  <ItemPrice>k__BackingField: 15
   <ImageName>k__BackingField: Audi Car
+  <Description>k__BackingField: Lorem ipsum dolor sit amet, consectetur adipiscing
+    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   slicedSprites:
-  - name: Easy
     sprites:
     - {fileID: 0}
     - {fileID: 304118271728914333, guid: 3c6e49216333e3840941ddbad7b22483, type: 3}
@@ -28,16 +32,4 @@ MonoBehaviour:
     - {fileID: -6970510314513939528, guid: 3c6e49216333e3840941ddbad7b22483, type: 3}
     - {fileID: 8838097600134754544, guid: 3c6e49216333e3840941ddbad7b22483, type: 3}
     emptySlot: {fileID: 5973911281243714824, guid: 3c6e49216333e3840941ddbad7b22483, type: 3}
-  - name: Hard
-    sprites:
-    - {fileID: 0}
-    - {fileID: -6832133166196702274, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
-    - {fileID: -8125372678279924562, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
-    - {fileID: -6269249409320579980, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
-    - {fileID: 3042974277716110146, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
-    - {fileID: -2402536449363966181, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
-    - {fileID: 9055572123554995487, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
-    - {fileID: -2443273307695510366, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
-    - {fileID: 803358510517954626, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
-    emptySlot: {fileID: -676812162861665625, guid: 4d5edb2637d449e48abf210b40b5b587, type: 3}
   previewImage: {fileID: 21300000, guid: 1f6405d0ad4313f4d877d5d8273283dc, type: 3}

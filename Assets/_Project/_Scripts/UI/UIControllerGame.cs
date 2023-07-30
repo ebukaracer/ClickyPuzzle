@@ -29,8 +29,6 @@ internal partial class UIControllerGame : MonoBehaviour
     private float _bestTime;
 
     private int _currentItem;
-    private int _savedCash;
-    private int _difficultyIndex;
 
     private bool _hasGameStarted;
     private bool _hasGameEnded;
@@ -44,9 +42,7 @@ internal partial class UIControllerGame : MonoBehaviour
     [SerializeField] private TextMeshProUGUI countdownT;
     [SerializeField] private TextMeshProUGUI highscoreT;
     [SerializeField] private TextMeshProUGUI winT;
-    [SerializeField] private TextMeshProUGUI cashT;
     [SerializeField] private TextMeshProUGUI puzzleNameT;
-    [SerializeField] private TextMeshProUGUI puzzleDifficultyT;
 
     [Space(5), Header("CLIPS")]
     [SerializeField] private AudioClip startSfx;
@@ -58,9 +54,7 @@ internal partial class UIControllerGame : MonoBehaviour
         _animator = GetComponent<Animator>();
         _loadingBarCanvas = loadingBar.GetComponentInParent<Canvas>();
 
-        _savedCash = SaveSystem.GetData<int>(Metrics.Cash);
         _currentItem = SaveSystem.GetData<int>(Metrics.CurrentItemInUse);
-        _difficultyIndex = SaveSystem.GetData<int>(Metrics.Difficulty);
     }
 
     private void Start()
@@ -84,14 +78,11 @@ internal partial class UIControllerGame : MonoBehaviour
         _puzzleItem = ItemManager.Instance.GetPuzzle(_currentItem);
 
         // Retrieves time/highscore based on the current puzzle mode.
-        _bestTime = SaveSystem.GetData<float>(Metrics.BestTimeNum(_difficultyIndex,
-            _puzzleItem.Dimension.EvenDimension.Item3));
+        _bestTime = SaveSystem.GetData<float>(Metrics.BestTimeNum(_puzzleItem.Dimension.EvenDimension.Item3));
 
         previewImage.sprite = _puzzleItem.PreviewImage;
         previewImageZoomed.sprite = previewImage.sprite;
         puzzleNameT.text = $"{_puzzleItem.ImageName} {_puzzleItem.Dimension.EvenDimension.Item3}";
-
-        puzzleDifficultyT.text = _difficulties[_difficultyIndex];
     }
 
     private void Update()
@@ -102,6 +93,14 @@ internal partial class UIControllerGame : MonoBehaviour
         _currentTime = Time.timeSinceLevelLoad;
 
         countdownT.text = Utility.TimeFormat(_currentTime);
+
+        GameoverTest();
+    }
+
+    private static void GameoverTest()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+            GameManager.Instance.SetGameState(GameState.GameOver);
     }
 
     /// <summary>
@@ -117,8 +116,10 @@ internal partial class UIControllerGame : MonoBehaviour
                 SoundManager.Instance.PlaySfx(startSfx);
                 break;
 
-            case GameState.GameOver:
+            case GameState.GameOver: // Win scenario
                 _hasGameEnded = true;
+                SaveMatchedPuzzle();
+
                 StartCoroutine(GameoverDelay());
                 CompareTime();
                 DisplayGameoverTime();
@@ -129,6 +130,16 @@ internal partial class UIControllerGame : MonoBehaviour
                 _hasGameEnded = true;
                 break;
         }
+    }
+
+    private void SaveMatchedPuzzle()
+    {
+        var saveKey = Metrics.IsMatched(_puzzleItem.ItemID);
+
+        if (SaveSystem.Contains(saveKey)) return;
+
+        SaveSystem.SaveData(saveKey, _puzzleItem.ItemID);
+        _animator.SetTrigger(Metrics.RewardIn);
     }
 
     /// <summary>
@@ -163,36 +174,19 @@ internal partial class UIControllerGame : MonoBehaviour
             _animator.SetTrigger(Metrics.Highscore);
 
             // Saved as number.
-            SaveSystem.SaveData(Metrics.BestTimeNum(_difficultyIndex,
-                    _puzzleItem.Dimension.EvenDimension.Item3),
+            SaveSystem.SaveData(Metrics.BestTimeNum(_puzzleItem.Dimension.EvenDimension.Item3),
                 _currentTime);
 
             // Saved as string converted time-format.
-            SaveSystem.SaveData(Metrics.BestTimeStr(_difficultyIndex,
-                    _puzzleItem.Dimension.EvenDimension.Item3),
+            SaveSystem.SaveData(Metrics.BestTimeStr(_puzzleItem.Dimension.EvenDimension.Item3),
                 Utility.TimeFormat(_currentTime));
 
-            RewardCash(_puzzleItem.Dimension.CashAmount);
             SetCommentText(_commentGenerator.GoodTexts);
         }
         else
         {
-            // Probably earn a reward.
-            RewardCash(Random.Range(0, 2));
             SetCommentText(_commentGenerator.FairTexts);
         }
-    }
-
-    /// <summary>
-    /// Adds up and saves the rewarded cash on the player's wallet. 
-    /// </summary>
-    private void RewardCash(int amount = 1)
-    {
-        _savedCash += amount;
-
-        SaveSystem.SaveData(Metrics.Cash, _savedCash);
-
-        cashT.SetText("${0}", amount);
     }
 
     /// <summary>

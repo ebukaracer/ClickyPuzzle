@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b1bd41c846e1746a48315e19fff634, type: 3}
   m_Name: MenuData
   m_EditorClassIdentifier: 
-  texture2D: {fileID: 2800000, guid: 1f6405d0ad4313f4d877d5d8273283dc, type: 3}
-  puzzleItem: {fileID: 11400000, guid: c495b372eeab1dd4e843d1e28104563f, type: 2}
-  sliceData: {fileID: 11400000, guid: 40ec9d507731d0d489382009e0b2c7da, type: 2}
+  texture2D: {fileID: 2800000, guid: 0822f724daab3824a8b951573b176084, type: 3}
+  puzzleItem: {fileID: 11400000, guid: 6a5472a932e21b546ac9d0d6a5289db2, type: 2}
+  sliceData: {fileID: 0}

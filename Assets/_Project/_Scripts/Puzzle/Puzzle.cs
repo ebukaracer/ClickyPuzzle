@@ -35,11 +35,9 @@ internal class Puzzle : MonoBehaviour
         // Retrieves a puzzle item from scriptable object, based on previous used item.
         PuzzleItem = ItemManager.Instance.GetPuzzle(SaveSystem.GetData<int>(Metrics.CurrentItemInUse));
 
-        var difficultyIndex = SaveSystem.GetData<int>(Metrics.Difficulty);
-
         // Retrieves the sliced squares and empty-sprite based on the difficulty level selected.
-        _sprites = PuzzleItem.GetSlicedImages(difficultyIndex);
-        _emptySprite = PuzzleItem.GetGetEmptySprite(difficultyIndex);
+        _sprites = PuzzleItem.SlicedImages;
+        _emptySprite = PuzzleItem.GetEmptySprite;
 
         // Shuffles the puzzle between these values.
         _shuffleAmount = Random.Range(Metrics.MaxSeed / 2, Metrics.MaxSeed);

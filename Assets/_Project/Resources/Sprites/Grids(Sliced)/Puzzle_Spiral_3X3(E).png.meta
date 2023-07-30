@@ -30,7 +30,7 @@ TextureImporter:
       213: -8784263954727022990
     second: Puzzle_Spiral_3X3(E)_8
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -51,6 +51,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -89,6 +90,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -128,6 +130,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
@@ -340,6 +354,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Puzzle_Spiral_3X3(E)_1: -1413953762135229691
+      Puzzle_Spiral_3X3(E)_0: -8874494509174422578
+      Puzzle_Spiral_3X3(E)_6: -5323594464876323939
+      Puzzle_Spiral_3X3(E)_3: -3755545488674352229
+      Puzzle_Spiral_3X3(E)_5: 8848409363333115588
+      Puzzle_Spiral_3X3(E)_7: 1513135225694890982
+      Puzzle_Spiral_3X3(E)_8: -8784263954727022990
+      Puzzle_Spiral_3X3(E)_4: -1746071516515520381
+      Puzzle_Spiral_3X3(E)_2: 9123846717613519077
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

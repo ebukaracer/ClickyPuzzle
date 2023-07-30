@@ -12,11 +12,6 @@ internal class MenuWindow : EditorWindow
     private static string _previewPath;
 
     private const string Nil = "nil";
-    private const string ThisSuffix = "E"; // Easy
-    private const string ThatSuffix = "H"; // Hard
-
-    private bool _isThis;
-    private bool _isThat;
 
     private static MenuData _menuData;
     private SerializedProperty _texture2D;
@@ -93,31 +88,14 @@ internal class MenuWindow : EditorWindow
         if (IsValidTexture())
             EditorGUI.DrawPreviewTexture(rect, Texture2dObject);
         EditorGUILayout.EndHorizontal();
-
-        EditorGUILayout.Space(10);
-        EditorGUILayout.HelpBox("Tick either but not both, before hitting [Setup] to suffix the 'to-be sliced-sprite' appropriately.\n" +
-                                "The preview displays how the new 'to-be sliced-sprite' will be named.", MessageType.Info);
-
-        EditorGUILayout.BeginHorizontal();
-        GUILayout.Label("Suffix", EditorStyles.boldLabel, GUILayout.Width(150));
-
-        _isThis = EditorGUILayout.ToggleLeft($"{ThisSuffix}", _isThis, GUILayout.Width(50));
-        _isThat = EditorGUILayout.ToggleLeft($"{ThatSuffix}", _isThat, GUILayout.Width(100));
-
+       
+       
         if (IsValidTexture())
-        {
-            if (_isThis && !_isThat)
-                RenderPreviewLabel(ThisSuffix);
-            else if (_isThat && !_isThis)
-                RenderPreviewLabel(ThatSuffix);
-            else
-                RenderPreviewLabel();
-        }
-        else
+            RenderPreviewLabel();
+        /*else
         {
             RenderPreviewLabel();
-        }
-        EditorGUILayout.EndHorizontal();
+        }*/
 
         EditorGUILayout.Space(10);
         #endregion
@@ -125,7 +103,7 @@ internal class MenuWindow : EditorWindow
         #region ACTION
         GUILayout.Label("ACTION", EditorStyles.largeLabel);
         EditorGUILayout.HelpBox("Drag in the original/imported sprite and hit [Setup] to the [Sliced Path] directory ready to be sliced.\n" +
-                                "Drag in a [SliceData] scriptable object which contains properties that'd be assigned to a sliced-sprite, before slicing. \n"+
+                                "Drag in a [SliceData] scriptable object which contains properties that would be assigned to a sliced-sprite, before slicing. \n" +
                                 "Drag in the setup-ed sprite and hit [Slice] to automatically slice it into grids ready to be initialized to the scriptable object.\n" +
                                 "Drag in the sliced-sprite and hit [Reset] to revert it back to it's default settings.\n" +
                                 "Drag in any sprite and hit [Delete] to delete it from project.", MessageType.Info);
@@ -143,7 +121,7 @@ internal class MenuWindow : EditorWindow
             if (IsValidTexture() && _previewPath != Nil)
                 MenuAction.CopyToPath(Texture2dObject, _previewPath);
             else
-                Logging.LogError($"Failed! <b>{nameof(_texture2D)}</b> must not be empty or Tick either <i><b>{ThisSuffix} or {ThatSuffix}</b></i>.");
+                Logging.LogError($"Failed! <b>{nameof(_texture2D)}</b> must not be empty.");
         }
 
         if (GUILayout.Button("Slice"))
@@ -177,8 +155,6 @@ internal class MenuWindow : EditorWindow
 
         GUILayout.Label("INIT", EditorStyles.largeLabel);
         EditorGUILayout.HelpBox("Assign to [Source Texture] preferably a less detailed unsliced-sprite and hit [Assign Preview Image].\n" +
-                                $"Assign a sliced-sprite and hit either Initialize[{ThisSuffix}] or Initialize[{ThatSuffix}], check sure their " +
-                                "suffixes are equal.\n" +
                                 "You must assign to [Scriptable Object] field before proceeding with the above operations.", MessageType.Info);
 
         EditorGUILayout.BeginHorizontal();
@@ -187,7 +163,7 @@ internal class MenuWindow : EditorWindow
         EditorGUILayout.EndHorizontal();
 
         EditorGUILayout.BeginHorizontal();
-        if (GUILayout.Button($"Assign Preview Image"))
+        if (GUILayout.Button("Assign Preview Image"))
         {
             if (PuzzleItemObject && _texturePath != Nil)
                 Initializer.AssignPreviewImg(PuzzleItemObject, _texturePath);
@@ -195,20 +171,14 @@ internal class MenuWindow : EditorWindow
                 Log(isTextureOrPuzzleEmpty: true);
         }
 
-        if (GUILayout.Button($"Initialize [{ThisSuffix}]"))
+        if (GUILayout.Button("Initialize"))
         {
             if (PuzzleItemObject && _texturePath != Nil)
-                Initializer.Init(PuzzleItemObject, _texturePath, true);
+                Initializer.InitToScriptableObj(PuzzleItemObject, _texturePath);
             else
                 Log(isTextureOrPuzzleEmpty: true);
         }
-        if (GUILayout.Button($"Initialize [{ThatSuffix}]"))
-        {
-            if (PuzzleItemObject && _texturePath != Nil)
-                Initializer.Init(PuzzleItemObject, _texturePath, false);
-            else
-                Log(isTextureOrPuzzleEmpty: true);
-        }
+
         EditorGUILayout.EndHorizontal();
         #endregion
 

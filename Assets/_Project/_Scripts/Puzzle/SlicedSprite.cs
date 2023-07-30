@@ -5,8 +5,6 @@ using UnityEngine;
 [System.Serializable]
 internal class SlicedSprite
 {
-    public string name;
-
     public List<Sprite> sprites;
 
     public Sprite emptySlot;

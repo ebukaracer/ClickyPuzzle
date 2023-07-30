@@ -18,7 +18,8 @@ internal class Item : MonoBehaviour
 
     public string Name { get; set; }
     public int StoreID { get; set; }
-    public int Price { get; set; }
-    public bool HasPurchased { get; set; }
+    public string Description { get; set; }
+    public bool IsUnlocked { get; set; }
+    public bool IsMatched { get; set; }
 }
 
