@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ItemID>k__BackingField: 8
   <ImageName>k__BackingField: Aetheric Lotus
-  <Description>k__BackingField: A lotus flower with ethereal petals, representing
-    the convergence of nature and futuristic elements.
+  <Description>k__BackingField: '<u>Aetheric Lotus</u>
+
+
+    A lotus flower with
+    ethereal petals, representing the convergence of nature and futuristic elements.'
   slicedSprites:
     sprites:
     - {fileID: 0}

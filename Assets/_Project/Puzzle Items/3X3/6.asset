@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ItemID>k__BackingField: 6
   <ImageName>k__BackingField: Cybernetic Griot
-  <Description>k__BackingField: A cybernetically-enhanced griot, merging storytelling
-    traditions with futuristic technology to narrate the Afrofuturistic saga.
+  <Description>k__BackingField: '<u>Cybernetic Griot</u>
+
+
+    A cybernetically-enhanced
+    griot, merging storytelling traditions with futuristic technology to narrate
+    the Afrofuturistic saga.'
   slicedSprites:
     sprites:
     - {fileID: 0}

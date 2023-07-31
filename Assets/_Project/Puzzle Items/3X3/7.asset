@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ItemID>k__BackingField: 7
   <ImageName>k__BackingField: Cybernetic Eye
-  <Description>k__BackingField: An advanced cybernetic eye representing enhanced
-    vision and perception, signifying technological advancement and insight.
+  <Description>k__BackingField: '<u>Cybernetic Eye</u>
+
+
+    An advanced cybernetic
+    eye representing enhanced vision and perception, signifying technological advancement
+    and insight.'
   slicedSprites:
     sprites:
     - {fileID: 0}

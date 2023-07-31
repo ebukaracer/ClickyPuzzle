@@ -1100,7 +1100,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120021162}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.48076922, z: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1149,7 +1149,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 2fc02db4a3e55824a95eaac40c7f46fc, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.101960786}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.29803923}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1379,7 +1379,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2fc02db4a3e55824a95eaac40c7f46fc, type: 3}
-  m_Color: {r: 1, g: 0.925, b: 0.7, a: 1}
+  m_Color: {r: 0.7, g: 0.4259434, b: 0.379717, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1735,7 +1735,7 @@ MonoBehaviour:
   - Fair
   - Moderate
   - Not bad
-  - Average
+  - Pretty good!
 --- !u!1 &1368557992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,10 +1838,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Congrats on unlocking a new afrofuturistic story!
+  m_text: 'Congrats on unlocking the underlying story based on this item!
 
-    Head on to the
-    library to explore.'
+    Head
+    on to your library to explore.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 428441d91903b854c8b5406ec9adb126, type: 2}
   m_sharedMaterial: {fileID: -5906442851944727005, guid: 428441d91903b854c8b5406ec9adb126, type: 2}
@@ -2420,7 +2420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.74509805, g: 0.5993961, b: 0.35686272, a: 1}
+  m_Color: {r: 1, g: 0.6084906, b: 0.5424528, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2554,7 +2554,7 @@ MonoBehaviour:
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
-  m_isRichText: 0
+  m_isRichText: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -3098,7 +3098,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.8301887, g: 0.70456886, b: 0.4503382, a: 1}
+  m_BackGroundColor: {r: 0.83137256, g: 0.5058824, b: 0.4509804, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3199,7 +3199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.74509805, g: 0.5993961, b: 0.35686272, a: 1}
+  m_Color: {r: 1, g: 0.6084906, b: 0.5424528, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

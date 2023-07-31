@@ -28,6 +28,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8450434236423213304}
   m_RootOrder: 0
@@ -105,6 +106,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8450434235836899692}
   - {fileID: 2728431958093531119}
@@ -138,7 +140,7 @@ CanvasGroup:
   m_IgnoreParentGroups: 0
 --- !u!95 &8450434236423213254
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -151,10 +153,11 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &8450434236423213305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8609424450637242469, guid: 1702b82486d9c7d409aaa1a6237e18e1, type: 3}
       propertyPath: m_Color.g
-      value: 0.7058824
+      value: 0.5058824
       objectReference: {fileID: 0}
     - target: {fileID: 8609424450637242469, guid: 1702b82486d9c7d409aaa1a6237e18e1, type: 3}
       propertyPath: m_Color.r

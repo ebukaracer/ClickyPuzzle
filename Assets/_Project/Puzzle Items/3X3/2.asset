@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ItemID>k__BackingField: 2
   <ImageName>k__BackingField: Neural Circuit
-  <Description>k__BackingField: An intricate neural circuit pattern, reflecting the
-    fusion of technology and the human mind in the Afrofuturistic world.
+  <Description>k__BackingField: '<u>Neural Circuit</u>
+
+
+    An intricate neural
+    circuit pattern, reflecting the fusion of technology and the human mind in the
+    Afrofuturistic world.'
   slicedSprites:
     sprites:
     - {fileID: 0}

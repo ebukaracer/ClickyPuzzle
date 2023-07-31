@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ItemID>k__BackingField: 1
   <ImageName>k__BackingField: Infinity Loop
-  <Description>k__BackingField: An infinity loop symbolizing endless possibilities
-    and the interconnectivity of time and space.
+  <Description>k__BackingField: '<u>Infinity Loop</u>
+
+
+    An infinity loop symbolizing
+    endless possibilities and the interconnectivity of time and space.'
   slicedSprites:
     sprites:
     - {fileID: 0}

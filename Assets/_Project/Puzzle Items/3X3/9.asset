@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ItemID>k__BackingField: 9
   <ImageName>k__BackingField: Aetheric Ankh
-  <Description>k__BackingField: A glowing Ankh symbol infused with aetheric energy,
-    signifying eternal life and cosmic wisdom in the Afrofuturistic realm.
+  <Description>k__BackingField: '<u>Aetheric Ankh</u>
+
+
+    A glowing Ankh symbol
+    infused with aetheric energy, signifying eternal life and cosmic wisdom in the
+    Afrofuturistic realm.'
   slicedSprites:
     sprites:
     - {fileID: 0}

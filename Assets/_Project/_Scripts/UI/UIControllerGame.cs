@@ -82,7 +82,7 @@ internal partial class UIControllerGame : MonoBehaviour
 
         previewImage.sprite = _puzzleItem.PreviewImage;
         previewImageZoomed.sprite = previewImage.sprite;
-        puzzleNameT.text = $"{_puzzleItem.ImageName}";
+        puzzleNameT.text = $"<u>{_puzzleItem.ImageName}</u>";
     }
 
     private void Update()

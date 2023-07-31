@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ItemID>k__BackingField: 5
   <ImageName>k__BackingField: Data Cloud
-  <Description>k__BackingField: A cloud-like shape composed of digital data, representing
-    the vast storage and processing power of the Afrofuturistic world.
+  <Description>k__BackingField: '<u>Data Cloud</u>
+
+
+    A cloud-like shape composed
+    of digital data, representing the vast storage and processing power of the Afrofuturistic
+    world.'
   slicedSprites:
     sprites:
     - {fileID: 0}

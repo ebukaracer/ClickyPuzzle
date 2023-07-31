@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ItemID>k__BackingField: 4
   <ImageName>k__BackingField: Temporal Key
-  <Description>k__BackingField: A time-traveling key with ancient glyphs, unlocking
-    the gates to the Afrofuturistic past and future.
+  <Description>k__BackingField: '<u>Temporal Key</u>
+
+
+    A time-traveling key with
+    ancient glyphs, unlocking the gates to the Afrofuturistic past and future.'
   slicedSprites:
     sprites:
     - {fileID: 0}

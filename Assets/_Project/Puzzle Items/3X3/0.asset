@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ItemID>k__BackingField: 0
   <ImageName>k__BackingField: Afrofuturistic Cityscape
-  <Description>k__BackingField: A bustling futuristic city with African-inspired
-    architecture, reflecting the harmonious coexistence of technology and culture.
+  <Description>k__BackingField: '<u>Afrofuturistic Cityscape</u>
+
+
+    A bustling
+    futuristic city with African-inspired architecture, reflecting the harmonious
+    coexistence of technology and culture.'
   slicedSprites:
     sprites:
     - {fileID: 0}

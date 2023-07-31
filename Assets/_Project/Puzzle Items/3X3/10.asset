@@ -14,14 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ItemID>k__BackingField: 10
   <ImageName>k__BackingField: The Vibranium Panther Suit
-  <Description>k__BackingField: 'A cutting-edge panther suit crafted from vibranium,
-    the most powerful and coveted element in the Afrofuturistic world. The suit enhances
-    the wearer''s strength, agility, and senses, signifying the seamless integration
-    of advanced technology and traditional African craftsmanship.
+  <Description>k__BackingField: '<u>The Vibranium Panther Suit</u>
 
 
     "Unleashing
-    the Power of Wakanda, Forging the Future."'
+    the Power of Wakanda, Forging the Future."
+
+
+    A cutting-edge panther suit
+    crafted from vibranium, the most powerful and coveted element in the Afrofuturistic
+    world. The suit enhances the wearer''s strength, agility, and senses, signifying
+    the seamless integration of advanced technology and traditional African craftsmanship.
+
+
+    Congratulations,
+    Puzzle Master! You''ve Unraveled the Afrofuturistic Mysteries!
+
+
+    Be sure
+    to rate and share your win!'
   slicedSprites:
     sprites:
     - {fileID: 0}

@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ItemID>k__BackingField: 3
   <ImageName>k__BackingField: Quantum Spiral
-  <Description>k__BackingField: A mesmerizing spiral pattern representing quantum
-    physics and the mysteries of the cosmos.
+  <Description>k__BackingField: '<u>Quantum Spiral</u>
+
+
+    A mesmerizing spiral
+    pattern representing quantum physics and the mysteries of the cosmos.'
   slicedSprites:
     sprites:
     - {fileID: 0}
