@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a39f75a37b98f44fa971cf1130547a0, type: 3}
+  m_Name: 1
+  m_EditorClassIdentifier: 
+  <ItemID>k__BackingField: 1
+  <ImageName>k__BackingField: Infinity Loop
+  <Description>k__BackingField: An infinity loop symbolizing endless possibilities
+    and the interconnectivity of time and space.
+  slicedSprites:
+    sprites:
+    - {fileID: 0}
+    - {fileID: -8732624880973367675, guid: b72015fcd81384f498ffa40808e9062f, type: 3}
+    - {fileID: -1779651084693020608, guid: b72015fcd81384f498ffa40808e9062f, type: 3}
+    - {fileID: -8126861290111184884, guid: b72015fcd81384f498ffa40808e9062f, type: 3}
+    - {fileID: -6625911888460882090, guid: b72015fcd81384f498ffa40808e9062f, type: 3}
+    - {fileID: 5593402185963894022, guid: b72015fcd81384f498ffa40808e9062f, type: 3}
+    - {fileID: -8730070639348269927, guid: b72015fcd81384f498ffa40808e9062f, type: 3}
+    - {fileID: 2920637736051977304, guid: b72015fcd81384f498ffa40808e9062f, type: 3}
+    - {fileID: -3224937473673287751, guid: b72015fcd81384f498ffa40808e9062f, type: 3}
+    emptySlot: {fileID: 6912315391350798685, guid: b72015fcd81384f498ffa40808e9062f, type: 3}
+  previewImage: {fileID: 21300000, guid: 13756c4f051255b458e2133134746f71, type: 3}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a39f75a37b98f44fa971cf1130547a0, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  <ItemID>k__BackingField: 2
+  <ImageName>k__BackingField: Neural Circuit
+  <Description>k__BackingField: An intricate neural circuit pattern, reflecting the
+    fusion of technology and the human mind in the Afrofuturistic world.
+  slicedSprites:
+    sprites:
+    - {fileID: 0}
+    - {fileID: -7362511498345041494, guid: 49994fa03a2df834a9722a1cb255b88f, type: 3}
+    - {fileID: 3496215198596069853, guid: 49994fa03a2df834a9722a1cb255b88f, type: 3}
+    - {fileID: -8897879513681569041, guid: 49994fa03a2df834a9722a1cb255b88f, type: 3}
+    - {fileID: 6307764995009088933, guid: 49994fa03a2df834a9722a1cb255b88f, type: 3}
+    - {fileID: 5887910864669435320, guid: 49994fa03a2df834a9722a1cb255b88f, type: 3}
+    - {fileID: 5812131763005999521, guid: 49994fa03a2df834a9722a1cb255b88f, type: 3}
+    - {fileID: -4646402086186722136, guid: 49994fa03a2df834a9722a1cb255b88f, type: 3}
+    - {fileID: 387539285103379408, guid: 49994fa03a2df834a9722a1cb255b88f, type: 3}
+    emptySlot: {fileID: 3428102777423955713, guid: 49994fa03a2df834a9722a1cb255b88f, type: 3}
+  previewImage: {fileID: 21300000, guid: dc4e694f57619684a80b2de3e60f1a71, type: 3}

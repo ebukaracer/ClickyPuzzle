@@ -232,7 +232,7 @@ MonoBehaviour:
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
-  m_isRichText: 1
+  m_isRichText: 0
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -1498,7 +1498,7 @@ MonoBehaviour:
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
-  m_isRichText: 1
+  m_isRichText: 0
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -1634,7 +1634,7 @@ MonoBehaviour:
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
-  m_isRichText: 1
+  m_isRichText: 0
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -1727,24 +1727,15 @@ MonoBehaviour:
   - Props!
   - Cheers!
   <GoodTexts>k__BackingField:
-  - Congratulations!
-  - Awesome!
-  - Whoo Hoo!
-  - Way to go!
-  - Nailed it!
-  - Good Game!
-  - Hats off!
-  - Mazel tov!
   - Props!
   - Cheers!
+  - Hats off!
+  - Congratulations!
   <FairTexts>k__BackingField:
   - Fair
   - Moderate
-  - Average
-  - Passable
-  - Okay
-  - Tolerable
   - Not bad
+  - Average
 --- !u!1 &1368557992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,7 +1815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500, y: -100}
+  m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 346, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1376124646
@@ -1849,8 +1840,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Congrats on unlocking a new afrofuturistic story!
 
-    Head to the library
-    to explore.'
+    Head on to the
+    library to explore.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 428441d91903b854c8b5406ec9adb126, type: 2}
   m_sharedMaterial: {fileID: -5906442851944727005, guid: 428441d91903b854c8b5406ec9adb126, type: 2}
@@ -1859,7 +1850,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190335
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1901,7 +1892,7 @@ MonoBehaviour:
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
-  m_isRichText: 1
+  m_isRichText: 0
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -2563,7 +2554,7 @@ MonoBehaviour:
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
-  m_isRichText: 1
+  m_isRichText: 0
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
@@ -2766,7 +2757,7 @@ MonoBehaviour:
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
-  m_isRichText: 1
+  m_isRichText: 0
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0

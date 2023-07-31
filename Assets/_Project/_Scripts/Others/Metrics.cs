@@ -20,17 +20,17 @@ internal class Metrics : MonoBehaviour
     // Animator IDs:
     public static int LibraryIn = Utility.GetAnimId(nameof(LibraryIn));
     public static int InfoIn = Utility.GetAnimId(nameof(InfoIn));
-    public static int UserPanel = Utility.GetAnimId("UserPanel");
-    public static int SettingsPane = Utility.GetAnimId("SettingsPanel");
-    public static int InputFieldIn = Utility.GetAnimId("SlideInInputField");
-    public static int Highscore = Utility.GetAnimId("Highscore");
-    public static int UiStart = Utility.GetAnimId("UIStart");
-    public static int UiStop = Utility.GetAnimId("UIStop");
+    public static int UserPaneIn = Utility.GetAnimId(nameof(UserPaneIn));
+    public static int SettingsPaneIn = Utility.GetAnimId(nameof(SettingsPaneIn));
+    public static int InputFieldIn = Utility.GetAnimId(nameof(InputFieldIn));
+    public static int Highscore = Utility.GetAnimId(nameof(Highscore));
+    public static int UIOut = Utility.GetAnimId(nameof(UIOut));
+    public static int UIIn = Utility.GetAnimId(nameof(UIIn));
     public static int RewardIn = Utility.GetAnimId(nameof(RewardIn));
-    public static int PrevImageZoom = Utility.GetAnimId("PrevImage");
+    public static int PrevImageIn = Utility.GetAnimId(nameof(PrevImageIn));
 
     // Other Random Fields:
-    public const string DefaultText = "USER_001"; // Default text if no input(username) was entered.
+    public const string DefaultText = "User0"; // Default text if no input(username) was entered.
     public const string DefaultHighscoreFormat = "00:00"; // Format to display user's highscore.
     public const int MaxSeed = 100; // Rate to shuffle the grid/square elements, keep this number moderate for optimized speed.
 }

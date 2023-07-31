@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a39f75a37b98f44fa971cf1130547a0, type: 3}
+  m_Name: 4
+  m_EditorClassIdentifier: 
+  <ItemID>k__BackingField: 4
+  <ImageName>k__BackingField: Temporal Key
+  <Description>k__BackingField: A time-traveling key with ancient glyphs, unlocking
+    the gates to the Afrofuturistic past and future.
+  slicedSprites:
+    sprites:
+    - {fileID: 0}
+    - {fileID: -4082545453845657718, guid: abd8bbaa6dcc14743b660d8458f288bd, type: 3}
+    - {fileID: -727529340343588144, guid: abd8bbaa6dcc14743b660d8458f288bd, type: 3}
+    - {fileID: 5088849729145127190, guid: abd8bbaa6dcc14743b660d8458f288bd, type: 3}
+    - {fileID: 66293354707887743, guid: abd8bbaa6dcc14743b660d8458f288bd, type: 3}
+    - {fileID: -1615512384647088439, guid: abd8bbaa6dcc14743b660d8458f288bd, type: 3}
+    - {fileID: 8218930917647734760, guid: abd8bbaa6dcc14743b660d8458f288bd, type: 3}
+    - {fileID: -3428256544600576011, guid: abd8bbaa6dcc14743b660d8458f288bd, type: 3}
+    - {fileID: -1450096465180377414, guid: abd8bbaa6dcc14743b660d8458f288bd, type: 3}
+    emptySlot: {fileID: -5181907062317738439, guid: abd8bbaa6dcc14743b660d8458f288bd, type: 3}
+  previewImage: {fileID: 21300000, guid: 97792cf7ff821b94fb6b52bcd50f2ff5, type: 3}

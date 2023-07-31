@@ -22,16 +22,13 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
     [SerializeField] private TextMeshProUGUI booksReadT;
 
 
-    /// <summary>
-    /// Gets/updates player's wallet amount in case player purchases an item.
-    /// </summary>
     public int TotalBooksRead
     {
         get => _booksReadCount;
         set
         {
             _booksReadCount = value;
-            booksReadT.text = $"{_booksReadCount}/5";
+            booksReadT.text = $"{_booksReadCount}/{ItemManager.Instance.ItemCount}";
         }
     }
 
@@ -58,11 +55,15 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
 
     public void DisplayLibrary(bool state)
     {
+        CollapseUserPanel();
+
         _anim.SetBool(Metrics.LibraryIn, state);
     }
 
     public void DisplayInfo(bool state)
     {
+        CollapseUserPanel();
+
         _anim.SetBool(Metrics.InfoIn, state);
     }
 
@@ -74,7 +75,13 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
     {
         _isUserPanelActive = !_isUserPanelActive;
 
-        _anim.SetBool(Metrics.UserPanel, _isUserPanelActive);
+        _anim.SetBool(Metrics.UserPaneIn, _isUserPanelActive);
+    }
+
+    private void CollapseUserPanel()
+    {
+        if (_isUserPanelActive)
+            _anim.SetBool(Metrics.UserPaneIn, _isUserPanelActive = false);
     }
 
     /// <summary>
@@ -84,7 +91,9 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
     /// <param name="state"></param>
     public void DisplaySettingsPanel(bool state)
     {
-        _anim.SetBool(Metrics.SettingsPane, state);
+        _anim.SetBool(Metrics.SettingsPaneIn, state);
+
+        CollapseUserPanel();
     }
 
     /// <summary>
@@ -106,6 +115,8 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
     public void LoadScene()
     {
         LoadManager.Instance.LoadSceneAsync(1);
+
+        CollapseUserPanel();
     }
 
     /// <summary>

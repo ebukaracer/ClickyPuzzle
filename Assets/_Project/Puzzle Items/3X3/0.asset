@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a39f75a37b98f44fa971cf1130547a0, type: 3}
+  m_Name: 0
+  m_EditorClassIdentifier: 
+  <ItemID>k__BackingField: 0
+  <ImageName>k__BackingField: Afrofuturistic Cityscape
+  <Description>k__BackingField: A bustling futuristic city with African-inspired
+    architecture, reflecting the harmonious coexistence of technology and culture.
+  slicedSprites:
+    sprites:
+    - {fileID: 0}
+    - {fileID: -5028664041527531159, guid: cbdf621abaac88d4c85f230c9ef33cde, type: 3}
+    - {fileID: 7915641496286310258, guid: cbdf621abaac88d4c85f230c9ef33cde, type: 3}
+    - {fileID: 57652423416772150, guid: cbdf621abaac88d4c85f230c9ef33cde, type: 3}
+    - {fileID: 243855552463066893, guid: cbdf621abaac88d4c85f230c9ef33cde, type: 3}
+    - {fileID: -539697818105209684, guid: cbdf621abaac88d4c85f230c9ef33cde, type: 3}
+    - {fileID: 1404410482733937265, guid: cbdf621abaac88d4c85f230c9ef33cde, type: 3}
+    - {fileID: -2555673312369791367, guid: cbdf621abaac88d4c85f230c9ef33cde, type: 3}
+    - {fileID: -539738413703081769, guid: cbdf621abaac88d4c85f230c9ef33cde, type: 3}
+    emptySlot: {fileID: -7248448118900920529, guid: cbdf621abaac88d4c85f230c9ef33cde, type: 3}
+  previewImage: {fileID: 21300000, guid: b7db18d4b27f70148a1859642dbaf430, type: 3}

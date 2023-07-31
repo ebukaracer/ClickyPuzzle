@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a39f75a37b98f44fa971cf1130547a0, type: 3}
+  m_Name: 6
+  m_EditorClassIdentifier: 
+  <ItemID>k__BackingField: 6
+  <ImageName>k__BackingField: Cybernetic Griot
+  <Description>k__BackingField: A cybernetically-enhanced griot, merging storytelling
+    traditions with futuristic technology to narrate the Afrofuturistic saga.
+  slicedSprites:
+    sprites:
+    - {fileID: 0}
+    - {fileID: -8779448727342918129, guid: 9b446b8ded037ba44969f31c966e68b7, type: 3}
+    - {fileID: 1368779915696055047, guid: 9b446b8ded037ba44969f31c966e68b7, type: 3}
+    - {fileID: 3640626812713382642, guid: 9b446b8ded037ba44969f31c966e68b7, type: 3}
+    - {fileID: 1361275651988834294, guid: 9b446b8ded037ba44969f31c966e68b7, type: 3}
+    - {fileID: 6006680885381318720, guid: 9b446b8ded037ba44969f31c966e68b7, type: 3}
+    - {fileID: -2622966297057706222, guid: 9b446b8ded037ba44969f31c966e68b7, type: 3}
+    - {fileID: -8155449931697468083, guid: 9b446b8ded037ba44969f31c966e68b7, type: 3}
+    - {fileID: 914096273066292514, guid: 9b446b8ded037ba44969f31c966e68b7, type: 3}
+    emptySlot: {fileID: -2305785404509466706, guid: 9b446b8ded037ba44969f31c966e68b7, type: 3}
+  previewImage: {fileID: 21300000, guid: dc8a817c11b34e84e9b343dc1ef587d5, type: 3}

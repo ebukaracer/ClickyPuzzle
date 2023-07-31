@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -44,9 +45,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzles:
-  - {fileID: 11400000, guid: dd435a5336b06e347b1673a7f48593e8, type: 2}
-  - {fileID: 11400000, guid: ee42090dfc6eac34ba85999c8327f31a, type: 2}
-  - {fileID: 11400000, guid: 4f3d6358ab43c234fb1d5e025217fb91, type: 2}
-  - {fileID: 11400000, guid: 6a5472a932e21b546ac9d0d6a5289db2, type: 2}
   - {fileID: 11400000, guid: c495b372eeab1dd4e843d1e28104563f, type: 2}
   - {fileID: 11400000, guid: 3f0f07b1af9e4ef4389d6e7b9b78b48a, type: 2}
+  - {fileID: 11400000, guid: 5bf07bf444497da4da89d772773beb60, type: 2}
+  - {fileID: 11400000, guid: 4f3d6358ab43c234fb1d5e025217fb91, type: 2}
+  - {fileID: 11400000, guid: a798497c1cdb99d44a0812f09ff19d73, type: 2}
+  - {fileID: 11400000, guid: 6a5472a932e21b546ac9d0d6a5289db2, type: 2}
+  - {fileID: 11400000, guid: cc7b7432943432143a5586c9ef5e7166, type: 2}
+  - {fileID: 11400000, guid: 39634aa513a98bf4cadd67377418abe0, type: 2}
+  - {fileID: 11400000, guid: 56efd46f329df4142b611532839d0428, type: 2}
+  - {fileID: 11400000, guid: 5422031f38ab0234bafda432a649cf2e, type: 2}
+  - {fileID: 11400000, guid: 70fe94b6c1ed2c045bf66700af380bd8, type: 2}

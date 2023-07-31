@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a39f75a37b98f44fa971cf1130547a0, type: 3}
+  m_Name: 8
+  m_EditorClassIdentifier: 
+  <ItemID>k__BackingField: 8
+  <ImageName>k__BackingField: Aetheric Lotus
+  <Description>k__BackingField: A lotus flower with ethereal petals, representing
+    the convergence of nature and futuristic elements.
+  slicedSprites:
+    sprites:
+    - {fileID: 0}
+    - {fileID: -5516063152016217060, guid: c24661757fa7fbb489296baff7f2b984, type: 3}
+    - {fileID: 3066276404951559157, guid: c24661757fa7fbb489296baff7f2b984, type: 3}
+    - {fileID: -5759147068336495390, guid: c24661757fa7fbb489296baff7f2b984, type: 3}
+    - {fileID: -3581876118428528542, guid: c24661757fa7fbb489296baff7f2b984, type: 3}
+    - {fileID: 2710557544377979452, guid: c24661757fa7fbb489296baff7f2b984, type: 3}
+    - {fileID: -6839237952334706330, guid: c24661757fa7fbb489296baff7f2b984, type: 3}
+    - {fileID: 499044090378773586, guid: c24661757fa7fbb489296baff7f2b984, type: 3}
+    - {fileID: 2055836018213602241, guid: c24661757fa7fbb489296baff7f2b984, type: 3}
+    emptySlot: {fileID: -7121218617693866347, guid: c24661757fa7fbb489296baff7f2b984, type: 3}
+  previewImage: {fileID: 21300000, guid: 1caa11f695581e8438b257bb14a5f965, type: 3}

@@ -82,7 +82,7 @@ internal partial class UIControllerGame : MonoBehaviour
 
         previewImage.sprite = _puzzleItem.PreviewImage;
         previewImageZoomed.sprite = previewImage.sprite;
-        puzzleNameT.text = $"{_puzzleItem.ImageName} {_puzzleItem.Dimension.EvenDimension.Item3}";
+        puzzleNameT.text = $"{_puzzleItem.ImageName}";
     }
 
     private void Update()
@@ -112,7 +112,7 @@ internal partial class UIControllerGame : MonoBehaviour
         {
             case GameState.Playing:
                 _hasGameStarted = true;
-                _animator.SetTrigger(Metrics.UiStart);
+                _animator.SetTrigger(Metrics.UIOut);
                 SoundManager.Instance.PlaySfx(startSfx);
                 break;
 
@@ -204,7 +204,7 @@ internal partial class UIControllerGame : MonoBehaviour
     {
         yield return Utility.GetWaitForSeconds(_gameManager.EndDelay);
 
-        _animator.SetTrigger(Metrics.UiStop);
+        _animator.SetTrigger(Metrics.UIIn);
     }
 
     /// <summary>
@@ -221,7 +221,7 @@ internal partial class UIControllerGame : MonoBehaviour
     public void ZoomPrevImage(bool state)
     {
         if (_hasGameStarted)
-            _animator.SetBool(Metrics.PrevImageZoom, state);
+            _animator.SetBool(Metrics.PrevImageIn, state);
     }
 
     /// <summary>

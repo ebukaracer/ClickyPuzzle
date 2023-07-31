@@ -1,4 +1,5 @@
 using Racer.SaveSystem;
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -82,10 +83,6 @@ internal class LibraryController : MonoBehaviour
         _itemContainer[0].gameObject.SetActive(true);
     }
 
-    /// <summary>
-    /// Moves to the next item.
-    /// This is assigned to the forward button in the shop panel.
-    /// </summary>
     public void ForwardArrow()
     {
         if (_currentItemIndex >= _itemContainer.Count - 1)
@@ -98,10 +95,6 @@ internal class LibraryController : MonoBehaviour
         EnableItem(_currentItemIndex);
     }
 
-    /// <summary>
-    /// Moves to the previous item.
-    /// This is assigned to the backward button in the shop-panel.
-    /// </summary>
     public void BackwardArrow()
     {
         if (_currentItemIndex <= 0)
@@ -114,9 +107,6 @@ internal class LibraryController : MonoBehaviour
         EnableItem(_currentItemIndex);
     }
 
-    /// <summary>
-    /// Resets the item's list as user departs from shop.
-    /// </summary>
     public void ResetItemOrder()
     {
         if (_currentItemIndex == 0) return;
@@ -145,9 +135,6 @@ internal class LibraryController : MonoBehaviour
         _itemContainer[index].gameObject.SetActive(false);
     }
 
-    /// <summary>
-    /// Initializes current item with appropriate properties if purchased.
-    /// </summary>
     private void CheckHasUnlocked()
     {
         setBtn.interactable = _itemContainer[_currentItemIndex].IsUnlocked;
@@ -169,11 +156,6 @@ internal class LibraryController : MonoBehaviour
         lockSpr.enabled = !isMatched;
     }
 
-    /// <summary>
-    /// Uses the current purchased item.
-    /// This is assigned to the 'use button' on the shop-panel.
-    /// Saves the current item being used.
-    /// </summary>
     public void UseItem()
     {
         var item = _itemContainer[_currentItemIndex];
@@ -197,9 +179,9 @@ internal class LibraryController : MonoBehaviour
             if (_itemContainer[i].StoreID != itemId) continue;
 
             _itemContainer[i].IsMatched = true;
-
-            CheckHasMatched(i);
         }
+
+        CheckHasMatched(_currentItemIndex);
 
         UIControllerMain.Instance.TotalBooksRead = _itemContainer.FindAll(b => b.IsMatched).Count;
     }
