@@ -1,3 +1,4 @@
+using System.Collections;
 using Racer.LoadManager;
 using Racer.SaveSystem;
 using Racer.Utilities;
@@ -12,6 +13,8 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
 {
     private Animator _anim;
 
+    private int _readCount;
+    private bool _hasReadGuide;
     private string _highscore;
     private bool _isUserPanelActive;
     private int _booksReadCount;
@@ -38,6 +41,8 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
 
         _anim = GetComponent<Animator>();
 
+        _hasReadGuide = SaveSystem.GetData<int>(Metrics.ReadCount) >= 1;
+
         InitMode();
         UpdateHighscore();
     }
@@ -57,6 +62,10 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
     {
         CollapseUserPanel();
 
+        DisplayGuide(false);
+
+        ModifyReadCount();
+
         _anim.SetBool(Metrics.LibraryIn, state);
     }
 
@@ -64,7 +73,23 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
     {
         CollapseUserPanel();
 
+        ModifyReadCount();
+
         _anim.SetBool(Metrics.InfoIn, state);
+    }
+
+    private void ModifyReadCount()
+    {
+        if (_hasReadGuide) return;
+
+        if (_readCount < 1)
+        {
+            _readCount++;
+
+            if (_readCount == 1)
+                SaveSystem.SaveData(Metrics.ReadCount, _readCount);
+        }
+        else _hasReadGuide = true;
     }
 
     /// <summary>
@@ -114,9 +139,24 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
     /// </summary>
     public void LoadScene()
     {
-        LoadManager.Instance.LoadSceneAsync(1);
+        if (_hasReadGuide)
+            LoadManager.Instance.LoadSceneAsync(1);
+        else
+            StartCoroutine(GuidTextRoutine());
 
         CollapseUserPanel();
+    }
+
+    private IEnumerator GuidTextRoutine()
+    {
+        DisplayGuide(true);
+        yield return Utility.GetWaitForSeconds(2f);
+        DisplayGuide(false);
+    }
+
+    private void DisplayGuide(bool value)
+    {
+        _anim.SetBool(Metrics.GuideIn, value);
     }
 
     /// <summary>

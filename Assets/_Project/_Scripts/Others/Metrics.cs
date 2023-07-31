@@ -11,6 +11,7 @@ internal class Metrics : MonoBehaviour
     public static string Username = nameof(Username);
     public static string CurrentItemInUse = nameof(CurrentItemInUse);
     public static string Mode = nameof(Mode);// either, 2X2, 3X3, 4X4...
+    public static string ReadCount = nameof(ReadCount);
     public static string Item = "Item_";
 
     public static string IsMatched(int id) => $"IsMatched.{id}";
@@ -19,6 +20,7 @@ internal class Metrics : MonoBehaviour
 
     // Animator IDs:
     public static int LibraryIn = Utility.GetAnimId(nameof(LibraryIn));
+    public static int GuideIn = Utility.GetAnimId(nameof(GuideIn));
     public static int InfoIn = Utility.GetAnimId(nameof(InfoIn));
     public static int UserPaneIn = Utility.GetAnimId(nameof(UserPaneIn));
     public static int SettingsPaneIn = Utility.GetAnimId(nameof(SettingsPaneIn));
