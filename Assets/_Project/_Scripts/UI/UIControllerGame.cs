@@ -94,7 +94,7 @@ internal partial class UIControllerGame : MonoBehaviour
 
         countdownT.text = Utility.TimeFormat(_currentTime);
 
-        GameoverTest();
+        // GameoverTest();
     }
 
     private static void GameoverTest()

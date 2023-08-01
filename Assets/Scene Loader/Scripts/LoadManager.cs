@@ -45,6 +45,8 @@ namespace Racer.LoadManager
             else
                 Destroy(gameObject);
 
+            _isLoading = false;
+
             _waitLoadDelay = new WaitForSeconds(loadDelay);
 
             // Time(s) to elapse while loading.

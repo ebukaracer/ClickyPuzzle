@@ -1,9 +1,3 @@
 {
-  "KeyValues": {
-    "Username": "Racer",
-    "IsMatched.0": 0,
-    "BestTime.3X3.Num": 57.61847,
-    "BestTime.3X3.Str": "0m:57s",
-    "ReadCount": 2
-  }
+  "KeyValues": {}
 }

@@ -4,6 +4,7 @@ using Racer.SaveSystem;
 using Racer.Utilities;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -166,7 +167,10 @@ internal partial class UIControllerMain : SingletonPattern.Singleton<UIControlle
     public void ResetPlayerProgress()
     {
         SaveSystem.DeleteSaveFile();
-        LoadManager.Instance.LoadSceneAsync(0);
+        SceneManager.LoadScene(0);
+
+        // TODO:
+        // LoadManager.Instance.LoadSceneAsync(0); 
     }
 
     public void ExitGame()
